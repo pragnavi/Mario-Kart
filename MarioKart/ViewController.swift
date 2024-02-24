@@ -132,8 +132,8 @@ class ViewController: UIViewController,
   // Called whenever the view becomes visible on the screen
   override func viewDidAppear(_ animated: Bool) {
       super.viewDidAppear(animated) // since we're overriding this from the super class, we should call the super class implementation
-      //runStartingAnimationsAllAtOnce()
-      runStartingAnimationsOneByOne()
+      runStartingAnimationsAllAtOnce()
+      //runStartingAnimationsOneByOne()
   }
   
   private func getKartReadyToRace(kart: UIImageView,
