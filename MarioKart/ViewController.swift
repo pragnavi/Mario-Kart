@@ -131,7 +131,8 @@ class ViewController: UIViewController,
   
   // Called whenever the view becomes visible on the screen
   override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
+      super.viewDidAppear(animated) // since we're overriding this from the super class, we should call the super class implementation
+      runStartingAnimationsAllAtOnce()
   }
   
   private func getKartReadyToRace(kart: UIImageView,
@@ -151,6 +152,9 @@ class ViewController: UIViewController,
   // Tip: Use `getKartReadyToRace`
   private func runStartingAnimationsAllAtOnce() {
     // YOUR CODE HERE
+    getKartReadyToRace(kart: kartView0)
+    getKartReadyToRace(kart: kartView1)
+    getKartReadyToRace(kart: kartView2)
   }
   
   // Exercise 8: Animate all karts one-by-one
