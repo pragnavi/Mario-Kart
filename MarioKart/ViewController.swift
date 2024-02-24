@@ -61,6 +61,7 @@ class ViewController: UIViewController,
     // Exercise 2: Rotate the kart
     // Tip: Use the `rotate` function below
     // YOUR CODE HERE
+      rotate(kart: sender.view, gestureRecognizer: sender)
   }
   
   private func rotate(kart: UIView?,
